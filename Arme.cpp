@@ -1,19 +1,22 @@
-
 #include "Arme.h"
 
-using namespace std;
-
-Arme::Arme() : nom("Baton"), degats(1.0)
-{
-
+void Arme::setDegats(float degatInit){
+    degats=degatInit;
 }
 
-Arme::Arme(string nomI, float degatsI) : nom(nomI), degats(degatsI)
-{
-
-}
-
-float Arme::getDegats() const
-{
+float Arme::getDegats(){
     return degats;
 }
+
+Arme::Arme(float degatsInit, typeArme typeInit){
+    degats=degatsInit;
+    type=typeInit;
+}
+
+Arme::Arme(){
+    degats=1.0;
+    type=typeArme::Baton
+}
+
+
+

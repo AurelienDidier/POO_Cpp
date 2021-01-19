@@ -1,3 +1,5 @@
+#include "Arme.h"
+
 class Personnage{
     //Definition de la classe personnage
     private:
@@ -6,6 +8,7 @@ class Personnage{
         int niveau;
         //int calculerDegats()
         const static int niveauMax=99;
+        Arme arme;
 
     public:
 
@@ -18,7 +21,7 @@ class Personnage{
         void setNiveau(int nouveauNiveau);
         void setForce(int nouvelleForce);
 
-        void attaquer(Personnage &cible);
+        virtual void attaquer(Personnage &cible);
         void recevoirDegats(int degat);
         
         //Constructeur
@@ -27,4 +30,8 @@ class Personnage{
         Personnage();
         //Destructeur
         ~Personnage();
+
+        void equiper(Arme armeInit);
+
+        
 };

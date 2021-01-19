@@ -1,7 +1,9 @@
 #include "Perso.h"
+
+/*
 void Personnage::attaquer(Personnage &cible){
-    cible.recevoirDegats();
-}
+    cible.recevoirDegats(force);
+}*/
 
 Personnage::Personnage(int vieInit, int forceInit, int niveauInit) : vie(vieInit), force(forceInit), niveau(niveauInit) 
 {
@@ -13,21 +15,6 @@ Personnage::Personnage(int niveauInit) : vie(niveauInit*100), force(niveauInit*1
 Personnage::Personnage() : vie(100), force(10), niveau(1)
 {
 }
-
-//Ou d'une autre manière
-Personnage::Personnage()
-{
-    vie=100;
-    force=10;
-    niveau=1;
-}
-Personnage::Personnage(int vieInit, int forceInit, int niveauInit)
-{
-    vie=vieInit;
-    force=forceInit;
-    niveau=niveauInit;
-}
-
 
 //Getter
 int Personnage::getVie()
@@ -56,6 +43,9 @@ void Personnage::setVie(int nouvelleVie)
     vie=nouvelleVie;
 }
 
+void Personnage::equiper(Arme armeInit){
+    arme=armeInit;
+}
 
 
 

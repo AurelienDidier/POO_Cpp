@@ -1,21 +1,16 @@
-#ifndef DEF_ARME
-#define DEF_ARME
+enum typeArme {Baton, Epee, Arc};
 
-#include <iostream>
-#include <string>
-
-class Arme
-{
-    public:
-
-        Arme();
-        Arme(std::string nomInit, float degatsInit);
-        float getDegats() const;
+class Arme{
 
     private:
 
-        std::string nom;
         float degats;
-};
+        typeArme type;
+        
+    public:
 
-#endif
+        void setDegats(float degatInit);
+        float getDegats();
+        Arme(float degats, typeArme type);
+        Arme();
+};

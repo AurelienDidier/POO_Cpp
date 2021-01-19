@@ -1,17 +1,23 @@
 #include "Perso.h"
 #include "Mage.h"
-
+#include "Arme.h"
 int main(){
-    Personnage apht(100, 10, 1);
-    apth.~Personnage();
+    Personnage heros1(100, 10, 1);
+    heros1.~Personnage();
 
-    Personnage gregarthur(1);
-    
-    Personnage dourene();
+    Personnage heros2(1);
+    Personnage heros3();
+    Personnage heros4();
 
-    Mage ganlin();
+    Mage salazar();
 
-    //Les méthodes non static en revanche s'utilisent comme suit: 
-    int herosLvl=heros.getLevel();
+    Mage gandalf(100,10,10,1);
 
-}
+    gandalf.attaquer(heros2);
+
+    Arme epee(2.0,typeArme::Epee);
+    Arme baton(1.5,typeArme::Baton);
+
+    gandalf.attaquer(Mage(salazar));
+
+};
