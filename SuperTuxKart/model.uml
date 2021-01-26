@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dvrqcFpuEeu3KtG5G3mUGQ" name="NewModel">
+  <packageImport xmi:id="_1gcCgFpxEeu3KtG5G3mUGQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uiUhMFpuEeu3KtG5G3mUGQ" name="Kart" visibility="public">
+    <ownedComment xmi:id="_UybXYFp1Eeu3KtG5G3mUGQ" annotatedElement="_uiUhMFpuEeu3KtG5G3mUGQ">
+      <body>https://github.com/ivancea/HammerFight/blob/master/Game.h</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_4QyKkFpuEeu3KtG5G3mUGQ" name="is_jumping" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4QyxoFpuEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4QyxoVpuEeu3KtG5G3mUGQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_S--EcFpvEeu3KtG5G3mUGQ" name="btKart" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WoDD8FpvEeu3KtG5G3mUGQ" name="Controller" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YrRf8FpvEeu3KtG5G3mUGQ" name="MaxSpeed" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ztfx8FpvEeu3KtG5G3mUGQ" name="TerrainInfo" visibility="public"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bCAGwFpvEeu3KtG5G3mUGQ" memberEnd="_bCAGwVpvEeu3KtG5G3mUGQ _bCAGxFpvEeu3KtG5G3mUGQ" navigableOwnedEnd="_bCAGwVpvEeu3KtG5G3mUGQ _bCAGxFpvEeu3KtG5G3mUGQ">
+    <ownedEnd xmi:id="_bCAGwVpvEeu3KtG5G3mUGQ" name="karts" type="_uiUhMFpuEeu3KtG5G3mUGQ" association="_bCAGwFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bCAGwlpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bCAGw1pvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_bCAGxFpvEeu3KtG5G3mUGQ" name="maxSpeeds" type="_YrRf8FpvEeu3KtG5G3mUGQ" association="_bCAGwFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bCAGxVpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bCAGxlpvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bUXpIFpvEeu3KtG5G3mUGQ" memberEnd="_bUXpIVpvEeu3KtG5G3mUGQ _bUXpJFpvEeu3KtG5G3mUGQ" navigableOwnedEnd="_bUXpIVpvEeu3KtG5G3mUGQ _bUXpJFpvEeu3KtG5G3mUGQ">
+    <ownedEnd xmi:id="_bUXpIVpvEeu3KtG5G3mUGQ" name="karts" type="_uiUhMFpuEeu3KtG5G3mUGQ" association="_bUXpIFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bUXpIlpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bUXpI1pvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_bUXpJFpvEeu3KtG5G3mUGQ" name="terrainInfos" type="_Ztfx8FpvEeu3KtG5G3mUGQ" association="_bUXpIFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bUXpJVpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bUXpJlpvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bfqTIFpvEeu3KtG5G3mUGQ" memberEnd="_bfqTIVpvEeu3KtG5G3mUGQ _bfqTJFpvEeu3KtG5G3mUGQ" navigableOwnedEnd="_bfqTIVpvEeu3KtG5G3mUGQ _bfqTJFpvEeu3KtG5G3mUGQ">
+    <ownedEnd xmi:id="_bfqTIVpvEeu3KtG5G3mUGQ" name="karts" type="_uiUhMFpuEeu3KtG5G3mUGQ" association="_bfqTIFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bfqTIlpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bfqTI1pvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_bfqTJFpvEeu3KtG5G3mUGQ" name="controllers" type="_WoDD8FpvEeu3KtG5G3mUGQ" aggregation="shared" association="_bfqTIFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bfqTJVpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bfqTJlpvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bu63IFpvEeu3KtG5G3mUGQ" memberEnd="_bu63IVpvEeu3KtG5G3mUGQ _bu63JFpvEeu3KtG5G3mUGQ" navigableOwnedEnd="_bu63JFpvEeu3KtG5G3mUGQ">
+    <ownedEnd xmi:id="_bu63JFpvEeu3KtG5G3mUGQ" name="btKarts" type="_S--EcFpvEeu3KtG5G3mUGQ" association="_bu63IFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bu63JVpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bu63JlpvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_bu63IVpvEeu3KtG5G3mUGQ" name="karts" type="_uiUhMFpuEeu3KtG5G3mUGQ" association="_bu63IFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bu63IlpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bu63I1pvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_c5bicFpvEeu3KtG5G3mUGQ" name="PowerUp" visibility="public">
+    <ownedOperation xmi:id="_02DToFpvEeu3KtG5G3mUGQ" name="use">
+      <ownedParameter xmi:id="_w65lUFpyEeu3KtG5G3mUGQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kHazIFpvEeu3KtG5G3mUGQ" memberEnd="_kHazIVpvEeu3KtG5G3mUGQ _kHazJFpvEeu3KtG5G3mUGQ" navigableOwnedEnd="_kHazIVpvEeu3KtG5G3mUGQ _kHazJFpvEeu3KtG5G3mUGQ">
+    <ownedEnd xmi:id="_kHazIVpvEeu3KtG5G3mUGQ" name="karts" type="_uiUhMFpuEeu3KtG5G3mUGQ" association="_kHazIFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kHazIlpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kHazI1pvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_kHazJFpvEeu3KtG5G3mUGQ" name="powerUps" type="_c5bicFpvEeu3KtG5G3mUGQ" association="_kHazIFpvEeu3KtG5G3mUGQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kHazJVpvEeu3KtG5G3mUGQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kHazJlpvEeu3KtG5G3mUGQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_JEIkQFp1Eeu3KtG5G3mUGQ" name="toto" visibility="public">
+    <ownedLiteral xmi:id="_KsMHMFp1Eeu3KtG5G3mUGQ" name="Literal1">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_KsMuQFp1Eeu3KtG5G3mUGQ"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:id="_Lj9csFp1Eeu3KtG5G3mUGQ" name="Literal2">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_Lj-DwFp1Eeu3KtG5G3mUGQ" value="1"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:id="_L9bsoFp1Eeu3KtG5G3mUGQ" name="Literal3">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_L9cTsFp1Eeu3KtG5G3mUGQ" value="2"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:id="_MaDXMFp1Eeu3KtG5G3mUGQ" name="Literal4">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_MaD-QFp1Eeu3KtG5G3mUGQ" value="3"/>
+    </ownedLiteral>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_h2hT0F_bEeubtrAqLTQtQQ" name="Personnage" visibility="public">
+    <ownedAttribute xmi:id="_mSHVYF_bEeubtrAqLTQtQQ" name="vie" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mSHVYV_bEeubtrAqLTQtQQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mSHVYl_bEeubtrAqLTQtQQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_nXOjUF_bEeubtrAqLTQtQQ" name="force" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXOjUV_bEeubtrAqLTQtQQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXPKYF_bEeubtrAqLTQtQQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oixJYF_bEeubtrAqLTQtQQ" name="niveau" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oixJYV_bEeubtrAqLTQtQQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oixJYl_bEeubtrAqLTQtQQ" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iYUj4F_cEeubtrAqLTQtQQ" name="attaquer">
+      <ownedParameter xmi:id="_0SCXcF_cEeubtrAqLTQtQQ" name="cible" type="_h2hT0F_bEeubtrAqLTQtQQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jX3VUF_cEeubtrAqLTQtQQ" name="recevoirDegats">
+      <ownedParameter xmi:id="_4i3TcF_cEeubtrAqLTQtQQ" name="degats">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xFyTUF_bEeubtrAqLTQtQQ" name="Mage" visibility="public">
+    <generalization xmi:id="_BWPDAF_cEeubtrAqLTQtQQ" general="_h2hT0F_bEeubtrAqLTQtQQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_B8cucF_cEeubtrAqLTQtQQ" name="Arme" visibility="public">
+    <ownedAttribute xmi:id="_blXCUF_cEeubtrAqLTQtQQ" name="degats" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_blXCUV_cEeubtrAqLTQtQQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_blXpYF_cEeubtrAqLTQtQQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_E3dHAF_cEeubtrAqLTQtQQ" name="personnagesToArmes" memberEnd="_E3dHAV_cEeubtrAqLTQtQQ _E3duEl_cEeubtrAqLTQtQQ" navigableOwnedEnd="_E3duEl_cEeubtrAqLTQtQQ">
+    <ownedEnd xmi:id="_E3dHAV_cEeubtrAqLTQtQQ" name="personnages" type="_h2hT0F_bEeubtrAqLTQtQQ" association="_E3dHAF_cEeubtrAqLTQtQQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E3duEF_cEeubtrAqLTQtQQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E3duEV_cEeubtrAqLTQtQQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_E3duEl_cEeubtrAqLTQtQQ" name="armes" type="_B8cucF_cEeubtrAqLTQtQQ" aggregation="shared" association="_E3dHAF_cEeubtrAqLTQtQQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E3eVIF_cEeubtrAqLTQtQQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E3eVIV_cEeubtrAqLTQtQQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_QYp5UF_cEeubtrAqLTQtQQ" name="typeArme" visibility="public">
+    <ownedLiteral xmi:id="_Tf7zUF_cEeubtrAqLTQtQQ" name="Baton">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_Tf8aYF_cEeubtrAqLTQtQQ"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:id="_UZFo4F_cEeubtrAqLTQtQQ" name="Arc">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_UZFo4V_cEeubtrAqLTQtQQ" value="1"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:id="_VU0RUF_cEeubtrAqLTQtQQ" name="Epée">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_VU04YF_cEeubtrAqLTQtQQ" value="2"/>
+    </ownedLiteral>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YHqzcF_cEeubtrAqLTQtQQ" name="type" memberEnd="_YHragF_cEeubtrAqLTQtQQ _YHrag1_cEeubtrAqLTQtQQ" navigableOwnedEnd="_YHrag1_cEeubtrAqLTQtQQ">
+    <ownedEnd xmi:id="_YHragF_cEeubtrAqLTQtQQ" name="armes" type="_B8cucF_cEeubtrAqLTQtQQ" association="_YHqzcF_cEeubtrAqLTQtQQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YHragV_cEeubtrAqLTQtQQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YHragl_cEeubtrAqLTQtQQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_YHrag1_cEeubtrAqLTQtQQ" name="typeArmes" type="_QYp5UF_cEeubtrAqLTQtQQ" aggregation="composite" association="_YHqzcF_cEeubtrAqLTQtQQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YHrahF_cEeubtrAqLTQtQQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YHsBkF_cEeubtrAqLTQtQQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
