@@ -1,21 +1,21 @@
 #include "Arme.h"
 
-void Arme::setDegats(float degatInit){
+inline void Arme::setDegats(float degatInit){
     degats=degatInit;
 }
 
-float Arme::getDegats(){
+inline float Arme::getDegats(){
     return degats;
 }
 
-Arme::Arme(float degatsInit, typeArme typeInit){
+inline Arme::Arme(float degatsInit, typeArme typeInit){
     degats=degatsInit;
     type=typeInit;
 }
 
-Arme::Arme(){
+inline Arme::Arme(){
     degats=1.0;
-    type=typeArme::Baton
+    type=typeArme::Baton;
 }
 
 

@@ -1,3 +1,5 @@
+#pragma once
+
 enum typeArme {Baton, Epee, Arc};
 
 class Arme{

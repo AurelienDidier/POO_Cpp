@@ -1,6 +1,7 @@
-#include "Perso.h"
-#include "Mage.h"
-#include "Arme.h"
+#include "Mage.cpp"
+#include "Perso.cpp"
+#include "Arme.cpp"
+
 int main(){
     Personnage heros1(100, 10, 1);
     heros1.~Personnage();
@@ -18,6 +19,8 @@ int main(){
     Arme epee(2.0,typeArme::Epee);
     Arme baton(1.5,typeArme::Baton);
 
-    gandalf.attaquer(Mage(salazar));
+
+    //Personnage pers=dynamic_cast<Personnage> (salazar);
+    //gandalf.attaquer();
 
 };

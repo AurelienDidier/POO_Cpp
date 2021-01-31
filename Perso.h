@@ -1,5 +1,5 @@
 #include "Arme.h"
-
+#pragma once
 class Personnage{
     //Definition de la classe personnage
     private:
@@ -8,7 +8,8 @@ class Personnage{
         int niveau;
         //int calculerDegats()
         const static int niveauMax=99;
-        Arme arme;
+        Arme arme; // L'Arme est "contenue" dans le Personnage
+    //Arme *m_arme; //L'Arme est un pointeur, l'objet n'est plus contenu dans le Personnage
 
     public:
 
@@ -21,7 +22,7 @@ class Personnage{
         void setNiveau(int nouveauNiveau);
         void setForce(int nouvelleForce);
 
-        virtual void attaquer(Personnage &cible);
+        void attaquer(Personnage &cible);
         void recevoirDegats(int degat);
         
         //Constructeur
@@ -32,6 +33,4 @@ class Personnage{
         ~Personnage();
 
         void equiper(Arme armeInit);
-
-        
 };

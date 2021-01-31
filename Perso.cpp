@@ -1,52 +1,52 @@
 #include "Perso.h"
-
 /*
 void Personnage::attaquer(Personnage &cible){
     cible.recevoirDegats(force);
 }*/
 
-Personnage::Personnage(int vieInit, int forceInit, int niveauInit) : vie(vieInit), force(forceInit), niveau(niveauInit) 
+inline Personnage::Personnage(int vieInit, int forceInit, int niveauInit): vie(vieInit), force(forceInit), niveau(niveauInit)
 {
 }
-Personnage::Personnage(int niveauInit) : vie(niveauInit*100), force(niveauInit*10), niveau(niveauInit)
+inline Personnage::Personnage(int niveauInit) : vie(niveauInit*100), force(niveauInit*10), niveau(niveauInit)
 {
 }
 
-Personnage::Personnage() : vie(100), force(10), niveau(1)
+inline Personnage::Personnage() : vie(100), force(10), niveau(1)
+{
+}
+inline Personnage::~Personnage( )
 {
 }
 
 //Getter
-int Personnage::getVie()
+inline int Personnage::getVie()
 {
     return vie;
 }
-int Personnage::getNiveau()
+inline int Personnage::getNiveau()
 {
     return niveau;
 }
-int Personnage::getForce()
+inline int Personnage::getForce()
 {
     return force;
 }
 //Setter
-void Personnage::setVie(int nouvelleVie)
+inline void Personnage::setVie(int nouvelleVie)
 {
     vie=nouvelleVie;
 }
-void Personnage::setNiveau(int nouveauNiveau)
+inline void Personnage::setForce(int nouvelleForce)
+{
+    force=nouvelleForce;
+}
+inline void Personnage::setNiveau(int nouveauNiveau)
 {
     niveau=nouveauNiveau;
 }
-void Personnage::setVie(int nouvelleVie)
-{
-    vie=nouvelleVie;
-}
-
-void Personnage::equiper(Arme armeInit){
+inline void Personnage::equiper(Arme armeInit){
     arme=armeInit;
 }
-
-
-
-
+inline void Personnage::recevoirDegats(int degat){
+    vie=vie-degat;
+}

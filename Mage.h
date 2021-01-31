@@ -1,5 +1,5 @@
 #include "Perso.h"
-
+#pragma once
 class Mage: Personnage{
 
     private:
@@ -16,7 +16,5 @@ class Mage: Personnage{
         Mage(int niveauInit);
 
         void attaquer(Personnage &cible);
-        void attaquer(Mage &cible);
-
 
 };
